@@ -1,7 +1,7 @@
 {
   "name": "pick-keys",
   "version": "1.0.1",
-  "description": "Randomly sampling some keys from an object.",
+  "description": "Given an object, pick a random key and return it.",
   "main": "index.js",
   "scripts": {
     "lint": "jshint index.js",
@@ -14,20 +14,16 @@
   "keywords": [
     "pick",
     "sampling",
-    "array",
-    "arr",
     "key",
     "keys",
-    "value",
-    "values",
-    "property",
-    "properties",
-    "array-like",
-    "shuffle",
+    "object",
     "random",
     "randomly",
     "randomize",
-    "rand"
+    "chance",
+    "test",
+    "dice",
+    "mock"
   ],
   "license": "MIT",
   "author": {
@@ -52,6 +48,6 @@
   "dependencies": {
     "is-object": "^1.0.1",
     "object-keys": "^1.0.9",
-    "pick-items": "^1.0.1"
+    "pick-items": "^1.0.2"
   }
 }

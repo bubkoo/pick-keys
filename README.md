@@ -1,13 +1,11 @@
 # pick-keys
 
-> Randomly sampling some keys from an object.
-
+> Given an object, pick a random key and return it.
 
 [![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/mock-end/pick-keys/blob/master/LICENSE)
 
 [![build:?](https://img.shields.io/travis/mock-end/pick-keys/master.svg?style=flat-square)](https://travis-ci.org/mock-end/pick-keys)
 [![coverage:?](https://img.shields.io/coveralls/mock-end/pick-keys/master.svg?style=flat-square)](https://coveralls.io/github/mock-end/pick-keys)
-
 
 
 ## Install
@@ -16,8 +14,6 @@
 $ npm install --save pick-keys 
 ```
 
-
-
 ## Usage
 
 > For more use-cases see the [tests](https://github.com/mock-end/pick-keys/blob/master/test/spec/index.js)
@@ -25,7 +21,9 @@ $ npm install --save pick-keys
 ```js
 var pickKeys = require('pick-keys');
 
-// pickKeys(object[, count]);
+// API
+// - pickKeys(object);
+// - pickKeys(object, count);
 
 pickKeys({ a: 1, b: 1, c: 1 });
 // => ['a', 'c']
@@ -52,16 +50,13 @@ pickKeys([]);    // => []
 
 ## Related
 
-- [pick-key](https://github.com/mock-end/pick-key) - Randomly sampling a key from an object.
-- [pick-prop](https://github.com/mock-end/pick-prop) - Randomly sampling a property from an object.
-- [pick-props](https://github.com/mock-end/pick-props) - Randomly sampling some properties from an object.
-- [object-at](https://github.com/gearcase/object-at) - Get object's property according to the path.
-- [object-has](https://github.com/gearcase/object-has) - Checks if path is a direct property of object.
-- [object-set](https://github.com/gearcase/object-set) - Sets the value at path of object.
-- [object-unset](https://github.com/gearcase/object-unset) - Removes the property at path of object.
-- [to-path](https://github.com/gearcase/to-path) - Converts string to a property path array. 
-
-
+- [pick-key](https://github.com/mock-end/pick-key) - Given an object, pick a random key and return it.
+- [pick-prop](https://github.com/mock-end/pick-prop) - Given an object, pick a random property and return it.
+- [pick-props](https://github.com/mock-end/pick-props) - Given an object, pick some random properties and return them in an array.
+- [pick-pair](https://github.com/mock-end/pick-pair) - Given an object, pick a random key-value and return it in a new object.
+- [pick-pairs](https://github.com/mock-end/pick-pairs) - Given an object, pick some random key-values and return it in a new object.
+- [pick-item](https://github.com/mock-end/pick-item) - Given an array, pick a random element and return it.
+- [pick-items](https://github.com/mock-end/pick-items) - Given an array, pick some random elements and return them in a new array. 
 
 ## Contributing
 
